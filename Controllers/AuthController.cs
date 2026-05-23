@@ -33,30 +33,27 @@ namespace avaliacao_b1.Controllers
 
         private string GerarToken()
         {
-            var key = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(
-                    _config["Jwt:Key"]));
+            var keyString = _config["Jwt:Key"] ?? throw new InvalidOperationException("Config 'Jwt:Key' não configurada.");
+            var issuer = _config["Jwt:Issuer"] ?? throw new InvalidOperationException("Config 'Jwt:Issuer' não configurada.");
+            var audience = _config["Jwt:Audience"] ?? throw new InvalidOperationException("Config 'Jwt:Audience' não configurada.");
 
-            var creds = new SigningCredentials(
-                key,
-                SecurityAlgorithms.HmacSha256);
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(keyString));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken(
-                issuer: _config["Jwt:Issuer"],
-                audience: _config["Jwt:Audience"],
-                expires: DateTime.Now.AddHours(1),
-                signingCredentials: creds
-            );
+                issuer: issuer,
+                audience: audience,
+                expires: DateTime.UtcNow.AddHours(1),
+                signingCredentials: creds);
 
-            return new JwtSecurityTokenHandler()
-                .WriteToken(token);
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 
     public class LoginModel
     {
-        public string Username { get; set; }
+        public required string Username { get; set; }
 
-        public string Password { get; set; }
+        public  required string Password { get; set; }
     }
 }
