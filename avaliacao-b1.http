@@ -1,6 +1,60 @@
-@avaliacao_b1_HostAddress = http://localhost:5135
+@baseUrl = http://localhost:5135
+@token = 
 
-GET {{avaliacao_b1_HostAddress}}/weatherforecast/
-Accept: application/json
+### 1. LOGIN - Obter JWT Token
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "123456"
+}
+
+###
+
+### 2. LISTAR TODOS OS ALUNOS
+GET {{baseUrl}}/api/alunos
+Authorization: Bearer {{token}}
+
+###
+
+### 3. CRIAR NOVO ALUNO
+POST {{baseUrl}}/api/alunos
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "nome": "Joao Silva",
+  "email": "joao@example.com",
+  "curso": "Engenharia",
+  "dataNascimento": "2000-01-15"
+}
+
+###
+
+### 4. CONSULTAR ALUNO POR ID
+GET {{baseUrl}}/api/alunos/1
+Authorization: Bearer {{token}}
+
+###
+
+### 5. ATUALIZAR ALUNO
+PUT {{baseUrl}}/api/alunos/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nome": "Joao Silva Updated",
+  "email": "joao.updated@example.com",
+  "curso": "Engenharia de Software",
+  "dataNascimento": "2000-01-15"
+}
+
+###
+
+### 6. REMOVER ALUNO
+DELETE {{baseUrl}}/api/alunos/1
+Authorization: Bearer {{token}}
 
 ###

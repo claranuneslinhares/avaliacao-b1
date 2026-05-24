@@ -288,3 +288,22 @@ C:\Users\marco\OneDrive\Documentos\Ifrn\Back-End\avaliacao-b1\obj\Debug\net10.0\
 C:\Users\marco\OneDrive\Documentos\Ifrn\Back-End\avaliacao-b1\obj\Debug\net10.0\avaliacao-b1.pdb
 C:\Users\marco\OneDrive\Documentos\Ifrn\Back-End\avaliacao-b1\obj\Debug\net10.0\avaliacao-b1.genruntimeconfig.cache
 C:\Users\marco\OneDrive\Documentos\Ifrn\Back-End\avaliacao-b1\obj\Debug\net10.0\ref\avaliacao-b1.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\dotnet-tools.json
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\Microsoft.Build.Framework.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\Microsoft.CodeAnalysis.ExternalAccess.RazorCompiler.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\Microsoft.VisualStudio.SolutionPersistence.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\Newtonsoft.Json.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\Users\M Clara Nunes\avaliacao-b1\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll

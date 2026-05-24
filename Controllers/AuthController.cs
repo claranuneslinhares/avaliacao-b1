@@ -23,15 +23,15 @@ namespace avaliacao_b1.Controllers
             if (login.Username == "admin"
                 && login.Password == "123456")
             {
-                var token = GerarToken();
+                var token = GerarToken(login.Username);
 
-                return Ok(new { token });
+                return Ok(new { token, username = login.Username });
             }
 
             return Unauthorized();
         }
 
-        private string GerarToken()
+        private string GerarToken(string username = "admin")
         {
             var keyString = _config["Jwt:Key"] ?? throw new InvalidOperationException("Config 'Jwt:Key' não configurada.");
             var issuer = _config["Jwt:Issuer"] ?? throw new InvalidOperationException("Config 'Jwt:Issuer' não configurada.");
@@ -40,9 +40,17 @@ namespace avaliacao_b1.Controllers
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(keyString));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, username),
+                new Claim(ClaimTypes.Name, username),
+                new Claim("usuario", username)
+            };
+
             var token = new JwtSecurityToken(
                 issuer: issuer,
                 audience: audience,
+                claims: claims,
                 expires: DateTime.UtcNow.AddHours(1),
                 signingCredentials: creds);
 
