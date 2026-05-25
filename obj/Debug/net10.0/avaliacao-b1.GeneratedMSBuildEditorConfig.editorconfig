@@ -20,21 +20,13 @@ build_property.TargetFrameworkVersion = v10.0
 build_property.EntryPointFilePath = 
 build_property.RootNamespace = avaliacao_b1
 build_property.RootNamespace = avaliacao_b1
-<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\M Clara Nunes\avaliacao-b1\
-=======
-build_property.ProjectDir = C:\Users\pedro\avaliacao-b1\
->>>>>>> 3355465b7953795b1427d8584c27c20521fd7ff4
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 10.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-<<<<<<< HEAD
 build_property.MSBuildProjectDirectory = C:\Users\M Clara Nunes\avaliacao-b1
-=======
-build_property.MSBuildProjectDirectory = C:\Users\pedro\avaliacao-b1
->>>>>>> 3355465b7953795b1427d8584c27c20521fd7ff4
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 

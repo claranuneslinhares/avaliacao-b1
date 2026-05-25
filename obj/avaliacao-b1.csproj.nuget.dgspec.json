@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\M Clara Nunes\\avaliacao-b1\\avaliacao-b1.csproj": {}
   },
   "projects": {
@@ -16,22 +15,6 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\M Clara Nunes\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-    "C:\\Users\\pedro\\avaliacao-b1\\avaliacao-b1.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\pedro\\avaliacao-b1\\avaliacao-b1.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\pedro\\avaliacao-b1\\avaliacao-b1.csproj",
-        "projectName": "avaliacao-b1",
-        "projectPath": "C:\\Users\\pedro\\avaliacao-b1\\avaliacao-b1.csproj",
-        "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pedro\\avaliacao-b1\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> 3355465b7953795b1427d8584c27c20521fd7ff4
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -56,11 +39,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-<<<<<<< HEAD
         "SdkAnalysisLevel": "10.0.300"
-=======
-        "SdkAnalysisLevel": "11.0.100"
->>>>>>> 3355465b7953795b1427d8584c27c20521fd7ff4
       },
       "frameworks": {
         "net10.0": {
@@ -107,24 +86,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[10.0.5, 10.0.5]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[10.0.5, 10.0.5]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[10.0.5, 10.0.5]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[10.0.5, 10.0.5]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -133,11 +94,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.300/PortableRuntimeIdentifierGraph.json",
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\11.0.100-preview.4.26230.115/PortableRuntimeIdentifierGraph.json",
->>>>>>> 3355465b7953795b1427d8584c27c20521fd7ff4
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

@@ -1,6 +1,5 @@
 @baseUrl = http://localhost:5135
 @token = 
-
 ### 1. LOGIN - Obter JWT Token
 POST {{baseUrl}}/api/auth/login
 Content-Type: application/json
