@@ -169,9 +169,54 @@ http://localhost:5135/swagger
 
 A API pode ser testada utilizando:
 
-- Swagger (já integrado)
-- Postman
-- Insomnia
+- **Swagger** (já integrado)
+- **Postman**
+- **Insomnia**
+- **REST Client** (extensão do VS Code)
+
+### Usando REST Client (VS Code)
+
+A forma mais simples de testar os endpoints é utilizando a extensão **REST Client** do VS Code:
+
+#### 1. Instalar a Extensão REST Client
+
+- Abra o VS Code
+- Vá para **Extensions** (Ctrl + Shift + X)
+- Procure por **REST Client** (autor: Huachao Mao)
+- Clique em **Install**
+
+#### 2. Usar o arquivo de testes
+
+O projeto contém um arquivo `avaliacao-b1.http` com todos os endpoints pré-configurados:
+
+- Abra o arquivo `avaliacao-b1.http` no VS Code
+- Clique no link **Send Request** que aparece acima de cada requisição
+- Ou use o atalho de teclado: `Ctrl + Alt + R`
+
+#### 3. Procedimento para Testar
+
+1. **Execute o endpoint de Login primeiro** (POST `/api/auth/login`)
+   - Isso retornará um token JWT
+   
+2. **Copie o token retornado** da resposta
+
+3. **Cole o token** na variável `@token` no arquivo `avaliacao-b1.http`:
+   ```http
+   @token = seu_token_aqui
+   ```
+
+4. **Execute os demais endpoints** para testar as operações CRUD
+
+#### 4. Exemplo de Fluxo de Testes
+
+```
+1. Login → Obtenha o token
+2. Listar Alunos → GET (sem autenticação ou com token)
+3. Criar Aluno → POST (com token)
+4. Consultar por ID → GET (com token)
+5. Atualizar Aluno → PUT (com token)
+6. Remover Aluno → DELETE (com token)
+```
 
 ## Conceitos Aplicados
 
